@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export default function NavBar() {
   return (
     <nav>
-      <h1>
-        NextGoogle
-      </h1>
+      <Link href='/'>
+        <h1>NextGoogle</h1>
+      </Link>
       <div>
-        <a href=""></a>
+        <Link href="/dashboard">Dashboard</Link>
       </div>
     </nav>
-  )
+  );
 }
